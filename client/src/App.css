@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body {
+    width: auto;
+    background: linear-gradient(to right, #FFC271, #FF5F6D);
+    height: 100vh;
+    padding: 40px 0;
+}
+
+.header-wrap {
+    background: #1B2C42;
+    color: #FFF;
+    text-align: center;
+    padding: 12px;
+    width: 70%;
+    margin: auto;
+    font-size: 32px;
+    font-weight: bold;
+    box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+}
+
+.App-header {
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.todoText {
+    padding: 2px;
+    margin-top: 2px;
+}
+
+.styled-checkbox {
+    position: absolute;
+    opacity: 0;
+}
+
+.styled-checkbox + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+}
+
+.styled-checkbox + label:before {
+    padding: 5px 14px;
+    content: '';
+    margin-right: 10px;
+    display: inline;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: #333;
+}
+
+.styled-checkbox:hover + label:before {
+    background: #f35429;
+}
+
+.styled-checkbox:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+
+.styled-checkbox:checked + label:before {
+    background: #f35429;
+}
+
+.styled-checkbox:disabled + label {
+    color: #b8b8b8;
+    cursor: auto;
+}
+
+.styled-checkbox:disabled + label:before {
+    box-shadow: none;
+    background: #ddd;
+}
+
+.styled-checkbox:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 11px;
+    background: white;
+    width: 4px;
+    height: 4px;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.myContainer {
+    width: 65%;
+    text-align: center;
+    margin: auto;
+}
+
+.card {
+    margin: 2vh;
+}
+
+.add-todo-wrap {
+    margin: 30px auto;
+}
+
+.add-todo {
+    display: flex;
+    align-items: center;
+}
+.tolist-wrap{
+    width: 90%;
+    margin: 50px auto;
+}
+.input-wrap{
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.1);
+    max-width: 70%;
+}
+.btn-wrap{
+    margin-left: 40px;
+}
+.add-btn{
+    background: linear-gradient(270deg,#1d2671,#c33764);
+    border: 1px solid #ffc107;
+    padding: 12px 30px;
+    min-width: 200px;
+}
+.todo-item{
+    background-image: linear-gradient(90deg,#ffecd2 0,#fcb69f);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    margin: 1rem auto;
+    border-radius: .25rem;
+    padding: 5px 20px;
+    width: 83%;
+}
+.title{
+    margin-left: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
